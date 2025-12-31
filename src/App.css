@@ -12,3 +12,6 @@
   color: #4976ac;
   font-weight: 700;
 }
+.App a:hover {
+  text-decoration: underline;
+}
