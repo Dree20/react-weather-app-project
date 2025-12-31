@@ -25,6 +25,15 @@ export default function App() {
             {" "}
             open-sourced on Github{" "}
           </a>
+          and hosted on{" "}
+          <a
+            href="https://react-weather-app-project-dree.netlify.app/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            {" "}
+            Netlify.
+          </a>
         </footer>
       </div>
     </div>
