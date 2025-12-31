@@ -7,3 +7,8 @@
   margin: 10px;
   text-align: center;
 }
+.App a {
+  text-decoration: none;
+  color: #4976ac;
+  font-weight: 700;
+}
