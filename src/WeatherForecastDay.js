@@ -3,11 +3,11 @@ import WeatherIcon from "./WeatherIcon";
 
 export default function WeatherForecastDay(props) {
   function maxTemperature() {
-    let temperature = Math.round(props.data.temperature.maximum);
+    let temperature = Math.round(props.newDay.temperature.maximum);
     return `${temperature}°`;
   }
   function minTemperature() {
-    let temperature = Math.round(props.data.temperature.minimum);
+    let temperature = Math.round(props.newDay.temperature.minimum);
     return `${temperature}°`;
   }
 
@@ -22,9 +22,9 @@ export default function WeatherForecastDay(props) {
 
   return (
     <div>
-      <div className="WeatherForecast-day">{props.day.time} </div>
-      <WeatherIcon code={props.day.condition[0].icon} size={36} />
-      <div className="WeatherForecasr-temperatures">
+      <div className="WeatherForecast-day">{day()} </div>
+      <WeatherIcon code={props.newDay.condition[0].icon} size={36} />
+      <div className="WeatherForecast-temperatures">
         <span className="WeatherForecast-temperature-max">
           {maxTemperature()}
         </span>{" "}
